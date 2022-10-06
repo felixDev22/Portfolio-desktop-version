@@ -141,7 +141,7 @@ nav ul li {
   margin-right: 2rem;
 }
 .portfolio {
-  background: var(portfolio-background);
+  background: var(--portfolio-bg);
   width: 100%;
   margin-top: 5rem;
   position: relative;
@@ -209,7 +209,7 @@ nav ul li {
   padding: 4px 12px;
   background: var(--tools-background);
   border-radius: 12px;
-  margin-right: 10px;
+  margin-right: 5px;
   color: var(--button-text);
   margin-top: 0.4rem;
   margin-bottom: 24px;
