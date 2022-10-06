@@ -15,6 +15,8 @@ html {
   height: auto;
   font-family: "Poppins", sans-serif;
   background: var(--body-bg);
+  position: relative;
+  z-index: -2;
 }
 :root {
   --header-color: #091e42;
@@ -91,7 +93,7 @@ nav p {
 
 /*------- Home-section Starts--------- */
 #home-page {
-  background: url(./images/hero-bg.png);
+  background: url(./images/Home-page.png);
   width: 1440px;
   height: 916px;
   background-position: cover;
@@ -151,13 +153,12 @@ nav ul li {
 /*------- Portfolio-section starts--------- */
 #portfolio {
   background: var(--portfolio-bg);
-  background: red;
   width: 1440px;
   height: 3200px;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  padding-top: 6rem;
   position: relative;
   z-index: -1;
-  padding-top: 6rem;
 }
 .card {
   background: var(--card-color);
@@ -270,6 +271,7 @@ nav ul li {
   background-repeat: no-repeat;
   width: 1440px;
   height: 924px;
+  margin-top: -8rem;
 }
 
 .row-grid {
@@ -333,3 +335,68 @@ hr {
   margin-bottom: 0.5rem;
 }
 /*------- About-section Ends here--------- */
+
+/*------- Contact-section starts here--------- */
+#contact-section {
+  background-image: url(./images/Contact-pg.svg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 846px;
+  margin-top: -15rem;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-text h2 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.contact-text p {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.form,
+.input,
+.message {
+  width: 447px;
+  font-size: 0.7rem;
+}
+
+.input,
+.message {
+  border-radius: 0.4rem;
+  margin-top: 20px;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+}
+
+.input {
+  padding: 0.75rem;
+}
+#contact-section button {
+  background: #fff;
+}
+
+#contact-section button:hover {
+  background: var(--active-btn);
+  color: var(--tools-background);
+}
+/* Contact-section End */
