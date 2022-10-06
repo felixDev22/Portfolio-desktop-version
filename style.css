@@ -12,6 +12,8 @@
 body {
   width: 1440px;
   height: auto;
+  font-family: "Poppins", sans-serif;
+  background: var(--body-bg);
 }
 :root {
   --header-color: #091e42;
@@ -20,10 +22,15 @@ body {
   --button-text: #396df2;
   --active-btn: #4053fc;
   --tools-background: #ebebff;
-  --logo-color: #ebebff;
+  --logo-color: #6070ff;
+  --body-bg: #e5e5e5;
+  --portfolio-bg: #f4f5f7;
+  --season-color: #6b778c;
+  --company-color: #344563;
 }
 img {
   width: 100%;
+  color: var(--body-bg);
 }
 button,
 input,
@@ -31,8 +38,7 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  width: 1440px;
-  padding: 5rem 16.25rem;
+  padding: 1rem 8.75rem;
 }
 .grid-container {
   display: grid;
@@ -55,6 +61,18 @@ h2 {
   font-weight: 700;
   color: var(--header-color);
 }
+h3 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--season-color);
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--company-color);
+}
+
 p {
   font-size: 1.25rem;
   line-height: 28px;
@@ -66,9 +84,141 @@ nav p {
   color: var(--text-color);
 }
 .home-page {
-  background-image: url(./images/hero-bg.png);
+  background: url(./images/hero-bg.png);
   width: 100%;
   height: 100vh;
   background-position: cover;
   background-repeat: no-repeat;
+}
+header {
+  width: 100%;
+  display: flex;
+  height: 5%;
+  justify-content: space-between;
+}
+#logo h2 {
+  color: var(--logo-color);
+  font-size: 1.125rem;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  color: var(--text-color);
+  font-size: 0.938rem;
+  margin-left: 2rem;
+}
+.home-details {
+  margin-top: 18.4rem;
+  padding-left: 7.2rem;
+  padding-right: 7.2rem;
+}
+.home-details h1 {
+  margin-bottom: 0.75rem;
+}
+.home-details p {
+  margin-bottom: 0.75rem;
+}
+
+.connect {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: var(--button-text);
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-links img {
+  width: 100%;
+}
+.social-links li {
+  margin-right: 2rem;
+}
+.portfolio {
+  background: var(portfolio-background);
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+  z-index: -1;
+}
+.card {
+  background: #ffff;
+  width: 1156px;
+  height: 496px;
+  border-radius: 25px;
+  margin-top: 8.8rem;
+  display: flex;
+}
+
+.col-1 img {
+  width: 544px;
+  height: 488px;
+  padding: 1.5rem;
+}
+
+.col-2 {
+  padding: 1.5rem;
+}
+.bullet-point {
+  background: var(--tools-background);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 15px;
+}
+.col-2 p {
+  font-size: 3.2rem;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+.work-details {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.work-title {
+  color: var(--work-title);
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.work-tools ul {
+  display: flex;
+}
+
+.tools-btn {
+  padding: 4px 12px;
+  background: var(--tools-background);
+  border-radius: 12px;
+  margin-right: 5px;
+  color: var(--button-text);
+  margin-top: 0.4rem;
+  margin-bottom: 24px;
+}
+
+.primary-btn {
+  padding: 10px 20px;
+  color: var(--button-text);
+  border: 1px solid var(--button-text);
+  border-radius: 8px;
+  background: var(--card-bkg-color);
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: var(--dark-blue);
+  color: var(--card-bkg-color);
+  box-shadow: 4px 4px 7px #7f8aed;
 }
