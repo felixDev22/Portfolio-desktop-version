@@ -83,6 +83,8 @@ nav p {
   line-height: 20px;
   color: var(--text-color);
 }
+
+/*------- Home-section Starts--------- */
 .home-page {
   background: url(./images/hero-bg.png);
   width: 100%;
@@ -140,6 +142,9 @@ nav ul li {
 .social-links li {
   margin-right: 2rem;
 }
+/*------- Home-section Ends--------- */
+
+/*------- Portfolio-section starts--------- */
 .portfolio {
   background: var(--portfolio-bg);
   width: 100%;
@@ -237,4 +242,9 @@ nav ul li {
 }
 .project-2 .col-1 {
   right: 0rem;
+}
+/*------- Portfolio-section Ends--------- */
+
+/*------- About-section starts--------- */
+#About-section {
 }
