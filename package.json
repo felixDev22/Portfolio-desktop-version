@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-desktop-version",
+  "version": "1.0.0",
+  "description": "A Microverse RWD - Portfolio, tools used are HTML &amp; CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixDev22/Portfolio-desktop-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixDev22/Portfolio-desktop-version/issues"
+  },
+  "homepage": "https://github.com/felixDev22/Portfolio-desktop-version#readme",
+  "devDependencies": {
+    "hint": "^7.1.2"
+  }
+}
