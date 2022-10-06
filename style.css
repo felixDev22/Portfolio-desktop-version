@@ -235,7 +235,7 @@ nav ul li {
   color: var(--button-text);
   border: 1px solid var(--button-text);
   border-radius: 8px;
-  background: var(--card-bkg-color);
+  background: var(--card-color);
   margin-top: 1rem;
   cursor: pointer;
   display: flex-start;
@@ -399,4 +399,15 @@ hr {
   background: var(--active-btn);
   color: var(--tools-background);
 }
+
+.active {
+  padding: 10px 20px;
+  color: var(--tools-background);
+  border: 1px solid var(--button-text);
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  background: var(--active-btn);
+  
+
 /* Contact-section End */
