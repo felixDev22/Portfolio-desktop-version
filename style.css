@@ -31,6 +31,7 @@ html {
   --company-color: #344563;
   --card-color: #ffff;
   --cards-stroke: #dfe1e6;
+  --languages-box: #f7f7f9;
 }
 img {
   width: 100%;
@@ -269,24 +270,66 @@ nav ul li {
   background-repeat: no-repeat;
   width: 1440px;
   height: 924px;
-  margin-top: -8rem;
 }
+
 .row-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.about-intro {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: 40% 60%;
   margin-top: 8.8rem;
+  gap: 40px;
 }
 .about-details h1 {
-  margin-bottom: 0.75rem;
+  color: var(--header-color);
 }
 .about-details p {
   font-size: 1rem;
   line-height: 24px;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
 }
-.connect a {
+.about-intro a {
   font-size: 1rem;
 }
+.languages {
+  display: flex;
+  justify-content: space-between;
+}
+.languages svg {
+  width: 400px;
+}
+.languages-box li {
+  background: var(--languages-box);
+  width: 120px;
+  height: 120px;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+.languages-box img {
+  width: 48px;
+  height: 48px;
+}
+.languages-box {
+  display: flex;
+}
+hr {
+  height: 1px;
+  width: 684px;
+  background: var(--icons-color);
+  margin-top: 1rem;
+}
+.skill {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.skill img {
+  width: 8px;
+}
+
+.skill h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+/*------- About-section Ends here--------- */
