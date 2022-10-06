@@ -9,7 +9,8 @@
   text-decoration: none;
   border: none;
 }
-body {
+body,
+html {
   width: 1440px;
   height: auto;
   font-family: "Poppins", sans-serif;
@@ -20,6 +21,7 @@ body {
   --text-color: #344563;
   --icons-color: #505f79;
   --button-text: #396df2;
+  --button-hover: #6070ff;
   --active-btn: #4053fc;
   --tools-background: #ebebff;
   --logo-color: #6070ff;
@@ -27,6 +29,8 @@ body {
   --portfolio-bg: #f4f5f7;
   --season-color: #6b778c;
   --company-color: #344563;
+  --card-color: #ffff;
+  --cards-stroke: #dfe1e6;
 }
 img {
   width: 100%;
@@ -85,15 +89,14 @@ nav p {
 }
 
 /*------- Home-section Starts--------- */
-.home-page {
+#home-page {
   background: url(./images/hero-bg.png);
-  width: 100%;
-  height: 100vh;
+  width: 1440px;
+  height: 916px;
   background-position: cover;
   background-repeat: no-repeat;
 }
 header {
-  width: 100%;
   display: flex;
   height: 5%;
   justify-content: space-between;
@@ -145,20 +148,24 @@ nav ul li {
 /*------- Home-section Ends--------- */
 
 /*------- Portfolio-section starts--------- */
-.portfolio {
+#portfolio {
   background: var(--portfolio-bg);
-  width: 100%;
-  margin-top: 5rem;
+  background: red;
+  width: 1440px;
+  height: 3200px;
+  margin-top: 2rem;
   position: relative;
   z-index: -1;
+  padding-top: 6rem;
 }
 .card {
-  background: #ffff;
+  background: var(--card-color);
   width: 1156px;
   height: 496px;
   border-radius: 25px;
   margin-top: 8.8rem;
   display: flex;
+  border: 1px solid var(--cards-stroke);
 }
 .card p {
   color: var(--text-color);
@@ -166,6 +173,7 @@ nav ul li {
   line-height: 1.5rem;
   margin-bottom: 24px;
 }
+
 .col-1 {
   display: flex;
   flex-direction: column;
@@ -232,9 +240,18 @@ nav ul li {
 }
 
 .primary-btn:hover {
-  background: var(--dark-blue);
-  color: var(--card-bkg-color);
+  background: var(--button-hover);
+  color: var(--card-color);
   box-shadow: 4px 4px 7px #7f8aed;
+}
+.active {
+  background: var(--active-btn);
+  color: var(--card-color);
+}
+
+.active-line {
+  border: 1px solid #7f8aed;
+  box-shadow: 4px 4px 10px #7f8aed;
 }
 .row .project-2 {
   display: flex;
@@ -246,5 +263,30 @@ nav ul li {
 /*------- Portfolio-section Ends--------- */
 
 /*------- About-section starts--------- */
-#About-section {
+#about-section {
+  background-image: url(./images/about-bg.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 924px;
+  margin-top: -8rem;
+}
+.row-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8.8rem;
+}
+.about-details h1 {
+  margin-bottom: 0.75rem;
+}
+.about-details p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+.connect a {
+  font-size: 1rem;
 }
