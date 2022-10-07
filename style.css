@@ -11,12 +11,7 @@
 }
 body,
 html {
-  width: 1440px;
-  height: auto;
   font-family: "Poppins", sans-serif;
-  background: var(--body-bg);
-  position: relative;
-  z-index: -2;
 }
 :root {
   --header-color: #091e42;
@@ -37,7 +32,6 @@ html {
 }
 img {
   width: 100%;
-  color: var(--body-bg);
 }
 button,
 input,
@@ -45,20 +39,19 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  padding: 1rem 8.75rem;
+  padding: 0 10%;
 }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 8.875rem;
 }
 .flex-container {
   display: flex;
   flex-direction: row;
 }
 h1 {
-  font-size: 3rem;
-  line-height: 60px;
+  font-size: 4.7rem;
+  line-height: 5rem;
   font-weight: 700;
   color: var(--header-color);
 }
@@ -81,8 +74,8 @@ h4 {
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 400;
 }
 nav p {
@@ -93,57 +86,75 @@ nav p {
 
 /*------- Home-section Starts--------- */
 #home-page {
-  background: url(./images/Home-page.png);
-  width: 1440px;
-  height: 916px;
-  background-position: cover;
+  background-image: url(./images/home-bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: 6rem;
+  z-index: 20;
 }
 header {
   display: flex;
-  height: 5%;
+  height: 8%;
   justify-content: space-between;
 }
 #logo h2 {
   color: var(--logo-color);
-  font-size: 1.125rem;
+  font-size: 6rem;
 }
 nav ul {
   display: flex;
 }
 nav ul li {
   color: var(--text-color);
-  font-size: 0.938rem;
-  margin-left: 2rem;
+  font-size: 4rem;
+  margin-left: 4rem;
 }
+
 .home-details {
-  margin-top: 18.4rem;
-  padding-left: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
+  padding-left: 20rem;
   padding-right: 7.2rem;
 }
 .home-details h1 {
-  margin-bottom: 0.75rem;
+  font-size: 14rem;
+  line-height: 16rem;
+  font-weight: 700;
+  color: var(--header-color);
+  margin-bottom: 3rem;
 }
 .home-details p {
-  margin-bottom: 0.75rem;
+  font-size: 5rem;
+  line-height: 6.5rem;
+  font-weight: 400;
+  display: flex;
+  width: 80%;
+  margin-bottom: 3.8rem;
 }
 
 .connect {
-  font-size: 2rem;
+  font-size: 6rem;
   letter-spacing: 0.1rem;
   color: var(--button-text);
   cursor: pointer;
+  margin-bottom: 3.2rem;
 }
 
 .social-links {
   display: flex;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   align-items: center;
   cursor: pointer;
 }
 
 .social-links img {
-  width: 100%;
+  width: 6rem;
+  margin-right: 7rem;
 }
 .social-links li {
   margin-right: 2rem;
@@ -153,20 +164,18 @@ nav ul li {
 /*------- Portfolio-section starts--------- */
 #portfolio {
   background: var(--portfolio-bg);
-  width: 1440px;
-  height: 3200px;
-  margin-top: 4rem;
-  padding-top: 6rem;
-  position: relative;
-  z-index: -1;
+}
+.row {
+  margin: 142px auto;
 }
 .card {
   background: var(--card-color);
-  width: 1156px;
-  height: 496px;
-  border-radius: 25px;
-  margin-top: 8.8rem;
+  width: 312rem;
+  height: 131rem;
+  border-radius: 70px;
+  margin-top: 40rem;
   display: flex;
+  align-items: center;
   border: 1px solid var(--cards-stroke);
 }
 .card p {
@@ -187,58 +196,74 @@ nav ul li {
   flex-basis: 50%;
   margin-left: -2rem;
 }
+.col-2 h2 {
+  font-size: 12rem;
+  margin-bottom: 7rem;
+}
+.col-2 p {
+  font-size: 4.5rem;
+  line-height: 6rem;
+  margin-bottom: 5rem;
+}
+
 .col-1 img {
-  width: 544px;
-  height: 488px;
-  padding: 1.5rem;
+  width: 100%;
+  padding: 8rem;
 }
 
 .col-2 {
-  padding: 1.5rem;
+  margin-top: 10px;
+  padding: 7rem;
 }
 .bullet-point {
-  background: var(--tools-background);
-  width: 8px;
-  height: 8px;
+  background: var(--season-color);
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  margin: 15px;
+  margin: 4rem;
 }
 
 .work-details {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 8rem;
 }
-
+.work-details h4,
+h3 {
+  font-size: 5rem;
+}
+.work-details p {
+  font-size: 20rem;
+}
 .work-title {
   color: var(--work-title);
 }
-
 .work-tools ul {
   display: flex;
-  font-size: 1rem;
 }
 
 .tools-btn {
-  padding: 4px 12px;
+  padding: 6px 24px;
   background: var(--tools-background);
-  border-radius: 12px;
-  margin-right: 5px;
+  border-radius: 2rem;
+  margin-right: 3rem;
   color: var(--button-text);
   margin-top: 0.4rem;
-  margin-bottom: 24px;
+  margin-bottom: 4rem;
+  font-size: 4rem;
 }
 
 .primary-btn {
-  padding: 10px 20px;
+  padding: 40px 90px;
   color: var(--button-text);
   border: 1px solid var(--button-text);
-  border-radius: 8px;
+  border-radius: 2rem;
   background: var(--card-color);
   margin-top: 1rem;
   cursor: pointer;
   display: flex-start;
+  font-size: 4rem;
 }
 
 .primary-btn:hover {
@@ -252,8 +277,8 @@ nav ul li {
 }
 
 .active-line {
-  border: 1px solid #7f8aed;
-  box-shadow: 4px 4px 10px #7f8aed;
+  border: 2px solid #7f8aed;
+  box-shadow: 24px 24px 30px #7f8aed;
 }
 .row .project-2 {
   display: flex;
@@ -269,54 +294,70 @@ nav ul li {
   background-image: url(./images/about-bg.png);
   background-position: cover;
   background-repeat: no-repeat;
-  width: 1440px;
-  height: 924px;
-  margin-top: -8rem;
+  width: 100%;
+  margin-top: 30rem;
 }
-
 .row-grid {
   display: grid;
   grid-template-columns: 40% 60%;
   margin-top: 8.8rem;
-  gap: 40px;
+  padding: 5rem;
+  gap: 20rem;
 }
 .about-details h1 {
   color: var(--header-color);
+  font-size: 12rem;
+  line-height: 12rem;
+  margin-bottom: 7rem;
 }
+.about-details {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-details p {
-  font-size: 1rem;
-  line-height: 24px;
-  margin-bottom: 0.75rem;
+  font-size: 5rem;
+  line-height: 8rem;
+  margin-bottom: 3rem;
   color: var(--text-color);
 }
 .about-intro a {
-  font-size: 1rem;
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  color: var(--button-text);
+  cursor: pointer;
+  margin-bottom: 3.2rem;
 }
+
+.languages h4 {
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+}
+
 .languages {
   display: flex;
   justify-content: space-between;
 }
-.languages svg {
-  width: 400px;
+.languages img {
+  width: 3rem;
 }
 .languages-box li {
   background: var(--languages-box);
-  width: 120px;
-  height: 120px;
-  padding: 1rem;
+  width: 20%;
+  padding: 5rem;
   margin-top: 2rem;
-  margin-right: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 6rem;
 }
 .languages-box img {
-  width: 48px;
-  height: 48px;
+  width: 60%;
 }
 .languages-box {
   display: flex;
 }
 hr {
   height: 1px;
-  width: 684px;
+  width: 100%;
   background: var(--icons-color);
   margin-top: 1rem;
 }
@@ -327,23 +368,25 @@ hr {
 }
 
 .skill img {
-  width: 8px;
+  width: 1.8rem;
 }
 
 .skill h4 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 6rem;
 }
 /*------- About-section Ends here--------- */
 
 /*------- Contact-section starts here--------- */
 #contact-section {
   background-image: url(./images/Contact-pg.svg);
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 1440px;
-  height: 846px;
-  margin-top: -15rem;
+  width: 100%;
+  height: 100vh;
+  margin-top: 3rem;
+  padding-top: 10rem;
 }
 .contact-text {
   display: flex;
@@ -355,18 +398,20 @@ hr {
 
 .contact-text h2 {
   color: #fff;
-  margin-bottom: 0.75rem;
+  font-size: 12rem;
+  padding-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 .contact-text p {
   color: #fff;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  margin-bottom: 2rem;
+  font-size: 5rem;
+  line-height: 10rem;
+  margin-bottom: 6rem;
   font-weight: 400;
   letter-spacing: 1px;
-  padding-left: 18rem;
-  padding-right: 18rem;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .contact-form {
@@ -376,8 +421,8 @@ hr {
 .form,
 .input,
 .message {
-  width: 447px;
-  font-size: 0.7rem;
+  width: 38%;
+  font-size: 3rem;
 }
 
 .input,
@@ -389,7 +434,9 @@ hr {
 }
 
 .input {
-  padding: 0.75rem;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin-bottom: 6rem;
 }
 #contact-section button {
   background: #fff;
@@ -401,12 +448,14 @@ hr {
 }
 
 .active {
-  padding: 10px 20px;
+  padding: 40px 90px;
   color: var(--tools-background);
   border: 1px solid var(--button-text);
-  border-radius: 8px;
   margin-top: 1rem;
+  border-radius: 2rem;
   cursor: pointer;
+  display: flex-start;
+  font-size: 4rem;
   background: var(--active-btn);
 }
 
