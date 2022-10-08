@@ -457,6 +457,16 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  #portfolio {
+    background: var(--portfolio-bg);
+    width: 100%;
+    height: 4500px;
+    margin-top: -8rem;
+    padding-top: 6rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+  }
   .row {
     font-display: flex;
   }
@@ -522,9 +532,9 @@ hr {
     background-image: url(./images/about-bg.png);
     background-position: cover;
     background-repeat: no-repeat;
-    width: 900px;
-    height: 1224px;
-    margin-top: 1200px;
+    width: 100%;
+    height: 1900px;
+    margin-top: -3rem;
     padding: 10px;
   }
 
@@ -536,6 +546,7 @@ hr {
     padding: 20px;
   }
   .about-details h1 {
+    margin-top: -6rem;
     margin-bottom: 0.75rem;
     color: var(--header-color);
   }
@@ -543,7 +554,7 @@ hr {
     width: 80%;
     font-size: 1rem;
     line-height: 24px;
-    margin-bottom: 0.75rem;
+
     color: var(--text-color);
   }
   .about-intro a {
@@ -598,13 +609,13 @@ hr {
     background-position: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 846px;
-    margin-top: -15rem;
+    height: 946px;
+    margin-top: -60rem;
   }
   .contact-text {
     display: flex;
     flex-direction: column;
-    padding-top: 12rem;
+    padding-top: 6rem;
     text-align: center;
     margin-bottom: 2rem;
   }
