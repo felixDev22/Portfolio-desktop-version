@@ -442,7 +442,7 @@ hr {
 
 /* --------------------For Mobile Devices----------------------- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     padding: 1rem 1rem;
   }
@@ -720,5 +720,4 @@ hr {
   }
 }
 
-/* --------------------Ends Here----------------------- */
-/* --------------------Ends Here----------------------- */
+/* ---------  -----------Ends Here----------  ------------- */
