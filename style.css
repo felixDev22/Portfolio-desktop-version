@@ -105,9 +105,14 @@ nav p {
   background-image: url(./images/Group\ 1.jpg);
   width: 100%;
   height: 100vh;
+<<<<<<< HEAD
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+=======
+  margin-top: 6rem;
+  z-index: 20;
+>>>>>>> parent of defd2e4 (Reverting back to previous html&css file.)
 }
 
 header {
@@ -132,7 +137,15 @@ nav ul li {
 }
 
 .home-details {
+<<<<<<< HEAD
   padding: 18.4rem 7rem;
+=======
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
+  padding-left: 20rem;
+  padding-right: 7.2rem;
+>>>>>>> parent of defd2e4 (Reverting back to previous html&css file.)
 }
 
 .home-details h1 {
@@ -170,6 +183,7 @@ nav ul li {
 /* ------- Portfolio-section starts--------- */
 #portfolio {
   background: var(--portfolio-bg);
+<<<<<<< HEAD
   width: 100%;
   height: 100vh;
   padding-top: 5rem;
@@ -188,6 +202,18 @@ nav ul li {
   height: 496px;
   border-radius: 25px;
   margin-top: 8.8rem;
+=======
+}
+.row {
+  margin: 142px auto;
+}
+.card {
+  background: var(--card-color);
+  width: 312rem;
+  height: 131rem;
+  border-radius: 70px;
+  margin-top: 40rem;
+>>>>>>> parent of defd2e4 (Reverting back to previous html&css file.)
   display: flex;
   border: 1px solid var(--cards-stroke);
 }
@@ -292,8 +318,12 @@ nav ul li {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+<<<<<<< HEAD
   height: 100vh;
   margin-top: 8rem;
+=======
+  margin-top: 30rem;
+>>>>>>> parent of defd2e4 (Reverting back to previous html&css file.)
 }
 
 .row-grid {
@@ -313,6 +343,16 @@ nav ul li {
   margin-bottom: 0.75rem;
   color: var(--text-color);
 }
+<<<<<<< HEAD
+=======
+.about-intro a {
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  color: var(--button-text);
+  cursor: pointer;
+  margin-bottom: 3.2rem;
+}
+>>>>>>> parent of defd2e4 (Reverting back to previous html&css file.)
 
 .about-intro a {
   font-size: 1rem;
@@ -394,8 +434,13 @@ hr {
   margin-bottom: 2rem;
   font-weight: 400;
   letter-spacing: 1px;
+<<<<<<< HEAD
   padding-left: 18rem;
   padding-right: 18rem;
+=======
+  padding-left: 30%;
+  padding-right: 30%;
+>>>>>>> parent of defd2e4 (Reverting back to previous html&css file.)
 }
 
 .contact-form {
@@ -440,6 +485,7 @@ hr {
   background: var(--active-btn);
 }
 
+<<<<<<< HEAD
 /* -------------------Contact-section End---------------------- */
 
 /* --------------------For Mobile Devices----------------------- */
@@ -723,3 +769,6 @@ hr {
 }
 
 /* ---------  -----------Ends Here----------  ------------- */
+=======
+/* Contact-section End */
+>>>>>>> parent of defd2e4 (Reverting back to previous html&css file.)
